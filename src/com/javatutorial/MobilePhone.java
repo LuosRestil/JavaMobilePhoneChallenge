@@ -90,10 +90,10 @@ public class MobilePhone {
         System.out.print("Update - Enter name of contact to change: ");
         String originalName = scanner.nextLine();
         if (contactExists(originalName)) {
-            System.out.print("Update - Enter name of contact to change: ");
+            System.out.print("Update - Enter new contact name: ");
             String newName = scanner.nextLine();
             if (contactExists(newName)) {
-                System.out.println(String.format("A contact with name \"%s\" already exists.", originalName));
+                System.out.println(String.format("A contact with name \"%s\" already exists.", newName));
             } else {
                 System.out.print("Update - Enter contact number: ");
                 String number = scanner.nextLine();
